@@ -107,7 +107,7 @@ function Home({ history, ...props }) {
             }
             endMessage={
               <p className="text-light" style={{ textAlign: "center" }}>
-                <b>Yay! You have seen it all</b>
+                <b>Pokémon : Attrapez-les tous !</b>
               </p>
             }
           >

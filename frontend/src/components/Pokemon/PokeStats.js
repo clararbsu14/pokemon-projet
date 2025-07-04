@@ -1,27 +1,21 @@
 import React from "react";
 
-const PokeStats = ({ stats, types }) => {
+const PokeStats = ({ stats }) => {
+  if (!stats) {
+    return <p>Loading stats...</p>;
+  }
+
   return (
     <div className="container-bar mt-0">
       <h4 className="w-100 mb-4 section-title">Stats</h4>
-      {stats.map((item, index) => {
-        return (
-          <div key={index} className="bar-item">
-            <div className="bar">
-              <div
-                style={{ height: item.base_stat }}
-                className={`bar-active ${types[0].type.name}`}
-              />
-              <div className="container-label">
-                <p className="value">{item.base_stat}</p>
-              </div>
-            </div>
-            <p className="mb-0 mt-2 text-center label limit-text">
-              {item.stat.name}
-            </p>
-          </div>
-        );
-      })}
+      <div className="bar-item">
+        <p><strong>HP:</strong> {stats.hp}</p>
+        <p><strong>Attack:</strong> {stats.attack}</p>
+        <p><strong>Defense:</strong> {stats.defense}</p>
+        <p><strong>Sp. Attack:</strong> {stats.sp_attack}</p>
+        <p><strong>Sp. Defense:</strong> {stats.sp_defense}</p>
+        <p><strong>Speed:</strong> {stats.speed}</p>
+      </div>
     </div>
   );
 };

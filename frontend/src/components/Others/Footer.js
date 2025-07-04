@@ -8,19 +8,12 @@ const Footer = () => {
   return (
     <footer className="mt-5">
       <div className="d-flex justify-content-center align-items-center">
-        <p className="mr-1 credits-text">Developed by</p>
-        <a className="mhq" target="_blank" href="https://matheusmhq.com.br/">
-          Matheus Henrique
-        </a>
+        <p className="mr-1 credits-text">Projet réalisé par Clara Rabusseau, Pierre Mazure, Brieuc Huot</p>
       </div>
-      <a
-        className="view-code"
-        target="_blank"
-        href="https://github.com/matheusmhq/pokedex-react-js"
-      >
-        View code on Github
+      <div className="view-code">
+        JUNIA ISEN 2025 AP4
         <FontAwesomeIcon className="ml-2" icon={faGithub} />
-      </a>
+      </div>
     </footer>
   );
 };

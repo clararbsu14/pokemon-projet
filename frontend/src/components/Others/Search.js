@@ -10,18 +10,18 @@ const Search = ({ history, query }) => {
 
   useEffect(() => {
     history.push(`/${searchQuery}`);
-  }, [searchQuery]);
+  }, [searchQuery, history]);  // ✅ Ajout de 'history' dans les dépendances
 
   return (
     <div className="container-search mb-4">
-      <Form.Label>Name or number</Form.Label>
+      <Form.Label>Bienvenue sur notre Pokédex !</Form.Label>
       <div className="container-input-btn">
         <input
           onChange={(e) => setSeachQuery(e.currentTarget.value)}
           value={searchQuery}
-          placeholder="Ex. Bulbasaur"
+          placeholder="Recherchez un Pokémon"
         />
-        {searchQuery != "" && (
+        {searchQuery !== "" && (   // ✅ Utilisation de !== pour éviter le warning eqeqeq
           <button onClick={() => setSeachQuery("")} className="btn-clear">
             <FontAwesomeIcon icon={faTimes} color={"white"} />
           </button>

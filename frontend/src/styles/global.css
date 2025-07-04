@@ -49,11 +49,11 @@
   --steel: #b7b7ce;
   --fairy: #d685ad;
 
-  --card_gray: #495057;
+  --card_gray: #4caf50;
 }
 
 body {
-  background-color: var(--brand_dark);
+  background-color: #d62828;
 }
 
 .container-fluid {
@@ -96,7 +96,7 @@ input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
 .uneditable-input:focus {
-  border-color: var(--dark_gray) !important;
+  border-color: var(--poison) !important;
   outline: 0 none;
 }
 
@@ -104,9 +104,11 @@ input[type="color"]:focus,
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-6px);
   }
+
   100% {
     transform: translateY(0%);
   }
@@ -178,7 +180,7 @@ input[type="color"]:focus,
 }
 
 .dark {
-  background-color: var(--dark);
+  background-color: var(--poison);
 }
 
 .steel {
@@ -251,7 +253,7 @@ input[type="color"]:focus,
 }
 
 .text-dark {
-  color: var(--dark);
+  color: var(--poison);
 }
 
 .text-steel {
@@ -269,3 +271,4 @@ input[type="color"]:focus,
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
+

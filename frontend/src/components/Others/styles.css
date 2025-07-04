@@ -4,14 +4,14 @@
 }
 
 .container-search input {
-  background-color: var(--brand_dark);
+  background-color: #FFFFFF;
   border: none;
   color: white !important;
   width: 96%;
 }
 
 .container-search input:focus {
-  background-color: var(--brand_dark);
+  background-color: var(--brand_white);
 }
 
 .container-input-btn {

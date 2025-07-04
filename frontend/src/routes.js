@@ -9,8 +9,8 @@ function Routes() {
     <div className="app">
       <BrowserRouter>
         <Switch>
-          <Route exact path="/:query?" component={Home} />
-          <Route exact path="/details/:name?" component={Details} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/details/:id" component={Details} />
         </Switch>
       </BrowserRouter>
     </div>
